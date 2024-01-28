@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "473124177275",
+    "firebase_url": "https://agneepath-2024-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "agneepath-2024",
+    "storage_bucket": "agneepath-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473124177275:android:046e47577c5a1c852d29de",
+        "android_client_info": {
+          "package_name": "com.agneepath.security.agneepath_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473124177275-0fsi9me5pd0gtb0o38e37sv6n07raagn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHZf1fmr45ckz3tY-P_CiEy1iXh12rcdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473124177275-0fsi9me5pd0gtb0o38e37sv6n07raagn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "473124177275-941hoe229aov02urapnss48m5h6jee4a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.agneepath.security-app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473124177275:android:6f83400e66eed79d2d29de",
+        "android_client_info": {
+          "package_name": "com.agneepath.security_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473124177275-9lm0bpm00sa8bi4po99t1ven5kl5p4eb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agneepath.security_app",
+            "certificate_hash": "38f40d2311627a8615c927d8acbf4c73646c413b"
+          }
+        },
+        {
+          "client_id": "473124177275-0fsi9me5pd0gtb0o38e37sv6n07raagn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHZf1fmr45ckz3tY-P_CiEy1iXh12rcdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473124177275-0fsi9me5pd0gtb0o38e37sv6n07raagn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "473124177275-941hoe229aov02urapnss48m5h6jee4a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.agneepath.security-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
