@@ -1,5 +1,5 @@
 *.apk
+*.so
 /Python Scripts/env
 /Python Scripts/PFP
 /Python Scripts/QR
-/build/

@@ -1,6 +1,5 @@
-import 'package:agneepath_security/Pages/Home.dart';
-import 'package:agneepath_security/Pages/login.dart';
-import 'package:agneepath_security/firebase_options.dart';
+import 'package:agneepath_app/Pages/login.dart';
+import 'package:agneepath_app/firebase_options.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +54,7 @@ class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Agneepath Security',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           color: Colors.transparent,

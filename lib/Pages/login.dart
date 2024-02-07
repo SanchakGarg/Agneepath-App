@@ -1,7 +1,8 @@
-import 'package:agneepath_security/Pages/Home.dart';
+import 'package:agneepath_app/Pages/Home.dart';
 import 'package:flutter/material.dart';
-import 'package:agneepath_security/main.dart';
+import 'package:agneepath_app/main.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sign_in_button/sign_in_button.dart';
@@ -25,28 +26,47 @@ class _LoginState extends State<Login> {
 
 
   void handlegooglesignin() async {
-    setState(() {
+    if(kIsWeb){setState(() {
       status='';
       email=null;
     });
     try {
       auth.signOut();
-      GoogleAuthProvider googleAuthProvider = GoogleAuthProvider();
-      googleSignIn.signOut();
-      final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
-      if (googleUser != null) {
-        final GoogleSignInAuthentication googleAuth =await googleUser.authentication;
-        final credential = GoogleAuthProvider.credential(
-          accessToken: googleAuth.accessToken,
-          idToken: googleAuth.idToken,
-        );
-        await auth.signInWithCredential(credential);
+      final GoogleAuthProvider googleAuthProvider = GoogleAuthProvider();
+      final UserCredential userCredential = await auth.signInWithPopup(googleAuthProvider);
+      final User? user = userCredential.user;
+      if (user != null) {
+        // final String? displayName = user.displayName;// Do something with the user's email, display name, and photo URL
       }
     } catch (error) {
       print(error);
     }
     if(user !=null){
-      if(isAuthorized){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Navigate()));}}
+      if(isAuthorized){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Navigate()));}}}
+    else {
+      setState(() {
+        status='';
+        email=null;
+      });
+      try {
+        auth.signOut();
+        // GoogleAuthProvider googleAuthProvider = GoogleAuthProvider();
+        googleSignIn.signOut();
+        final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
+        if (googleUser != null) {
+          final GoogleSignInAuthentication googleAuth =await googleUser.authentication;
+          final credential = GoogleAuthProvider.credential(
+            accessToken: googleAuth.accessToken,
+            idToken: googleAuth.idToken,
+          );
+          await auth.signInWithCredential(credential);
+        }
+      } catch (error) {
+        print(error);
+      }
+      if(user !=null){
+        if(isAuthorized){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Navigate()));}}
+    }
   }
 
   @override

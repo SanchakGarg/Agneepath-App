@@ -146,6 +146,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "cross_file",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/cross_file-0.3.3+8",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/crypto-3.0.3",
       "packageUri": "lib/",
@@ -174,6 +180,30 @@
       "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/file-7.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "file_selector_linux",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.2+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "file_selector_macos",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.3+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "file_selector_platform_interface",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/file_selector_platform_interface-2.6.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "file_selector_windows",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "firebase_auth",
@@ -278,6 +308,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "flutter_plugin_android_lifecycle",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.17",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///home/sanchak/snap/flutter/common/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -345,9 +381,57 @@
     },
     {
       "name": "image",
-      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image-4.1.4",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image-4.1.6",
       "packageUri": "lib/",
       "languageVersion": "2.15"
+    },
+    {
+      "name": "image_picker",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image_picker-1.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "image_picker_android",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image_picker_android-0.8.9+3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "image_picker_for_web",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "image_picker_ios",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.9+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "image_picker_linux",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "image_picker_macos",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "image_picker_platform_interface",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image_picker_platform_interface-2.9.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "image_picker_windows",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "js",
@@ -384,6 +468,12 @@
       "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/meta-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "mime",
+      "rootUri": "file:///home/sanchak/.pub-cache/hosted/pub.dev/mime-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "nested",
@@ -656,13 +746,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "agneepath_security",
+      "name": "agneepath_app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-01-28T20:26:51.430311Z",
+  "generated": "2024-02-07T08:46:47.358463Z",
   "generator": "pub",
-  "generatorVersion": "3.2.5"
+  "generatorVersion": "3.2.6"
 }

@@ -1,7 +1,7 @@
-import 'package:agneepath_security/Pages/Dashboard.dart';
-import 'package:agneepath_security/Pages/QR.dart';
+import 'package:agneepath_app/Pages/Dashboard.dart';
+import 'package:agneepath_app/Pages/QR.dart';
 import 'package:flutter/material.dart';
-import 'package:agneepath_security/main.dart';
+import 'package:agneepath_app/main.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 Set choice={'in'};
 
@@ -17,13 +17,20 @@ class _HomeState extends State<Home> {
   void find(){
     setState(() {
       UserData.scannedId = idcontroller.text;
-      showModalBottomSheet(isDismissible: false,
-          context: context, builder: (context) => const InfoSheet()).then(
+
+      showModalBottomSheet(
+          isDismissible: false,
+          isScrollControlled: true,
+          context: context,
+          builder: (context) => Padding(
+              padding: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).viewInsets.bottom),
+              child: const InfoSheet())).then(
               (value) {
-                setState(() {
-                  UserData.Report = false;
-                });
-              });
+            setState(() {
+              UserData.Report = false;
+            });
+          });
     });
   }
 
@@ -34,7 +41,7 @@ class _HomeState extends State<Home> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [Column(mainAxisAlignment: MainAxisAlignment.center,children: [const choicebutton(),
             ElevatedButton(
-              onPressed: () async {Navigator.push  (context, MaterialPageRoute(builder: (context) => const Scanner()));},
+              onPressed: () async {Navigator.push (context, MaterialPageRoute(builder: (context) => const Scanner()));},
               child: const Text('Start scanning'),),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
