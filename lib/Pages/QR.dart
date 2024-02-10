@@ -1,5 +1,7 @@
 import 'dart:io';
-
+import 'dart:typed_data';
+// import 'package:image_picker_for_web/image_picker_for_web.dart';
+// import 'package:image_picker_web/image_picker_web.dart';
 import 'Home.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -224,18 +226,34 @@ class _ImageWidgetState extends State<ImageWidget> {
   }
 
   void imagehandler() async {
-    updatephoto = false;
-
-    // if(kIsWeb) final picker =
+    Uint8List image = Uint8List(8);
     final picker = ImagePicker();
+    updatephoto = false;
     final pickedFile = await picker.pickImage(source: ImageSource.camera,maxHeight: 300,maxWidth: 300,imageQuality: 30);
     // final pickedFile = await
     print(pickedFile?.path ?? 'null');
     final storage = FirebaseStorage.instance;
     if (pickedFile != null) {
+
+      if(kIsWeb){ var f = await pickedFile.readAsBytes();
+      image =f;
       final ref = storage.ref().child('${UserData.scannedId}.jpg');
-      ref.putFile(File(pickedFile.path)).then((value) {getImageUrl();
-      });
+      ref.putData(image).then((value) {getImageUrl();
+      });}
+
+
+
+      else{
+        final ref = storage.ref().child('${UserData.scannedId}.jpg');
+        ref.putFile(File(pickedFile.path)).then((value) {getImageUrl();
+        });}
+
+
+
+
+
+
+
     } else {}
   }
 

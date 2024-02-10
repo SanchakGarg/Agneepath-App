@@ -1,12 +1,12 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/home/sanchak/snap/flutter/common/flutter"
-export "FLUTTER_APPLICATION_PATH=/mnt/7B466E99795271A1/Makerspace/agneepath_security_app"
+export "FLUTTER_APPLICATION_PATH=/mnt/7B466E99795271A1/Makerspace/agneepath_app"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
-export "FLUTTER_BUILD_NAME=1.2.1"
-export "FLUTTER_BUILD_NUMBER=1.2.1"
+export "FLUTTER_BUILD_NAME=2.0.2"
+export "FLUTTER_BUILD_NUMBER=2.0.2"
 export "DART_OBFUSCATION=false"
 export "TRACK_WIDGET_CREATION=true"
 export "TREE_SHAKE_ICONS=false"

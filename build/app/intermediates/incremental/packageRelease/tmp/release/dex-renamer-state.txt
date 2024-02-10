@@ -1,4 +1,4 @@
-#Wed Feb 07 06:32:14 IST 2024
+#Sat Feb 10 20:47:58 IST 2024
 base.0=/mnt/7B466E99795271A1/Makerspace/agneepath_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

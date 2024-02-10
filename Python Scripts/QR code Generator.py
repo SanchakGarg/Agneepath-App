@@ -47,7 +47,7 @@ for i in records:
     I1 = ImageDraw.Draw(img)
     
     # Add Text to an image
-    I1.text((10, 36), "Name: %s\nDesignation: %s\nBatch: %s\nPhone Number: %s\nID: %s"%(i['Name'], i['Designation '], i['Batch'], i['Contact no.'], i['ID']), font=myFont, fill=(0, 0, 0))
+    I1.text((10, 36),    "Name: %s\nDesignation: %s\nBatch: %s\nPhone Number: %s\nID: %s"%(i['Name'], i['Designation '], i['Batch'], i['Contact no.'], i['ID']), font=myFont, fill=(0, 0, 0))
     img.save('/mnt/7B466E99795271A1/Makerspace/agneepath_app/Python Scripts/QR/'+i['Name']+'.png')
     print(x)
     x+=1
